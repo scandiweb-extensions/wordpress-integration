@@ -1,7 +1,7 @@
-# ScandiPWA_WordPressIntegration
+# Scandiweb_WordPressIntegration
 
 Module to get WordPress blog posts and display them in Magneto CMS pages. Blog posts to CMS pages
-are added as widgets so this will work in all sorts on Magento setups, like with Luma or any other 
+are added as widgets so this will work in all sorts on Magento setups, like with Luma or any other
 Magento theme or with some ScandiPWA theme
 
 * Will add config to specify source blog to get posts from.
