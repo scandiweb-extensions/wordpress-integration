@@ -1,6 +1,6 @@
 {
     "name": "scandiweb-extensions/wordpress-integration",
-    "description": "Module to get WordPRess blog posts and display them in Magneto CMS pages",
+    "description": "Module to get WordPress blog posts and display them in Magneto CMS pages",
     "type": "magento2-module",
     "license": "OSL-3.0",
     "version": "1.0.0",
