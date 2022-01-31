@@ -26,7 +26,7 @@ $linkTarget = $block->getData('link_target');
         flex-direction: row;
     }
 
-    .WordPressPost_VideoWrap {
+    .WordPressPost_MediaWrap {
         aspect-ratio: 16 / 9;
         flex: 2;
         display: flex;
@@ -122,19 +122,21 @@ $linkTarget = $block->getData('link_target');
 
 <article class="WordPressPost WordPressPost-<?= $layout ?>">
     <?php if (!$showVideo): ?>
-        <img id="image-<?= $post->getPostId() ?>"
-             class="WordPressPost_Image"
-             src="<?= $post->getImageUrl() ?>"
-             loading="lazy"
-             alt="<?= $post->getTitle() ?>"
-        />
+        <div class="WordPressPost_MediaWrap">
+            <img id="image-<?= $post->getPostId() ?>"
+                 class="WordPressPost_Image"
+                 src="<?= $post->getImageUrl() ?>"
+                 loading="lazy"
+                 alt="<?= $post->getTitle() ?>"
+            />
+        </div>
     <?php endif; ?>
     <?php if ($videoIsIframe): ?>
-        <div class="WordPressPost_VideoWrap">
+        <div class="WordPressPost_MediaWrap">
             <?= $videoEmbed ?>
         </div>
     <?php elseif ($videoIsVideo): ?>
-        <div class="WordPressPost_VideoWrap">
+        <div class="WordPressPost_MediaWrap">
             <img id="image-<?= $post->getPostId() ?>"
                  class="WordPressPost_Image"
                  src="<?= $post->getImageUrl() ?>"
@@ -154,7 +156,7 @@ $linkTarget = $block->getData('link_target');
             ?>
         </div>
     <?php elseif (!empty($videoUrl)): ?>
-        <div class="WordPressPost_VideoWrap">
+        <div class="WordPressPost_MediaWrap">
             <img id="image-<?= $post->getPostId() ?>"
                  class="WordPressPost_Image"
                  src="<?= $post->getImageUrl() ?>"
