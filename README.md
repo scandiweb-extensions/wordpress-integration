@@ -27,12 +27,12 @@ To add settings where should Magento get WordPress blog articles for each store 
 **Stores → Configuration → ScandiPWA → WordPress Integration** and save source Url.
 Use URL of main url of the blog
 
-New posts from Magazine will be pulled to Magento every night.
+New posts from blog will be pulled to Magento every night.
 
 
-**Magazine post display**
+**Blog post post display**
 
-To see magazine posts on a CMA page open this page in the admin f.e.
+To see blog posts on a CMA page open this page in the admin f.e.
 Content → Pages →  Homepage
 
 Create a new **Row** and add **Columns** to it if necessary using Page builder tools
