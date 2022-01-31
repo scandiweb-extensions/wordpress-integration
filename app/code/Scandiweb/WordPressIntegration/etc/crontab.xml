@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Scandiweb_WordPressIntegration
+ *
+ * @category    Scandiweb
+ * @package     Scandiweb_WordPressIntegration
+ * @author      Raivis Dejus <info@scandiweb.com>
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Cron:etc/crontab.xsd">
+    <group id="wordpress">
+        <job name="wordpress_get_posts" instance="Scandiweb\WordPressIntegration\Cron\GetBlogPosts" method="execute">
+            <config_path>wordpress_integration/general/cron_expression</config_path>
+        </job>
+    </group>
+</config>

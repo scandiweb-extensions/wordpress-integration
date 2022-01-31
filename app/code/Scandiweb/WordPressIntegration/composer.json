@@ -1,0 +1,26 @@
+{
+    "name": "scandiweb/wordpress-integration",
+    "description": "Module to get WordPress blog posts and display them in Magneto CMS pages",
+    "type": "magento2-module",
+    "license": "OSL-3.0",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Raivis Dejus",
+            "email": "info@scandiweb.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "scandipwa/installer": "*",
+        "scandipwa/customization": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Scandiweb\\WordPressIntegration\\": ""
+        },
+        "files": [
+            "registration.php"
+        ]
+    }
+}
