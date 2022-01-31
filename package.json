@@ -1,5 +1,5 @@
 {
-    "name": "bolt-spwa",
+    "name": "wordpress-integration",
     "private": true,
     "license": "proprietary",
     "version": "0.0.0",
@@ -17,6 +17,6 @@
         "type": "magento"
     },
     "dependencies": {
-        "@scandipwa/magento-scripts": "1.10.0"
+        "@scandipwa/magento-scripts": "1.13.2"
     }
 }
