@@ -13,7 +13,7 @@
     <system>
         <section id="wordpress_integration" translate="label" type="text" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1">
             <label>WordPress integration</label>
-            <tab>Scandiweb</tab>
+            <tab>scandipwa</tab>
             <resource>Scandiweb_Customization::Scandiweb_config</resource>
 
             <group id="general" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
