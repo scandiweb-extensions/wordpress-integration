@@ -19,6 +19,14 @@ composer require scandipwa/customization
 
 ```
 
+To get cron installed run
+
+```
+magento cache:clean
+magento cron:run
+magento cron:run
+```
+
 ## Configuration and usage
 
 **Integration Settings**
@@ -68,5 +76,6 @@ or
 
 
 ## Future improvements
+* Add last cron error and execution time to be visible in WordPress settings section
 * Add support for selectable post image size. Currently, 'large' image size will be downloaded
 * Add support for full blog post content

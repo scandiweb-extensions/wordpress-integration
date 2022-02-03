@@ -29,7 +29,7 @@ class Video extends AbstractRenderer
         }
 
         if (!empty($videoEmbed)) {
-            return '<div style="max-width: 500px; max-height: 400px;">' . $videoEmbed . '</div>';
+            return '<div style="max-width: 500px; max-height: 400px;  position:relative;">' . $videoEmbed . '</div>';
         }
 
         return '';

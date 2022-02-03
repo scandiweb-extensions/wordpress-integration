@@ -21,6 +21,6 @@ class Image extends AbstractRenderer
      */
     public function render(DataObject $row)
     {
-        return '<image width="100%" style="max-width: 500px;" src="'.$row->getData('image_url').'">';
+        return '<image width="100%" style="max-width: 500px; position:relative;" src="'.$row->getData('image_url').'">';
     }
 }
