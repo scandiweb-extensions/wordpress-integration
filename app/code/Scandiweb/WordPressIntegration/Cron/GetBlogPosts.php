@@ -213,7 +213,11 @@ class GetBlogPosts
                         '/width="[0-9]*"/',
                         '/height="[0-9]*"/',
                         '/width=\\"[0-9]*\\"/',
-                        '/height=\\"[0-9]*\\"/'
+                        '/height=\\"[0-9]*\\"/',
+                        '/height=\'[0-9]*\'/',
+                        '/style="[a-zA-Z0-9:; _-]*"/',
+                        '/style=\\"[a-zA-Z0-9:; _-]*\\"/',
+                        '/style=\'[a-zA-Z0-9:; _-]*\'/'
                     ],
                     '',
                     $iframes[0]
@@ -255,6 +259,7 @@ class GetBlogPosts
                     [
                         '/id="[0-9a-z-_]*"/',
                         '/id=\\"[0-9a-z-_]*\\"/',
+                        '/id=\'[0-9a-z-_]*\'/',
                     ],
                     'id="video-' . $post["id"] . '"',
                     $videoTags[0]
