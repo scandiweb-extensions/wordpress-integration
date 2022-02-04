@@ -17,10 +17,13 @@
             <resource>Scandiweb_Customization::Scandiweb_config</resource>
 
             <group id="general" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
-                <label>General</label>
+                <label>Post collection</label>
                 <field id="source_url" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Source Url</label>
-                    <comment><![CDATA[Url of a WordPress blog where to get posts from.<br />Leave empty to disable the integration]]></comment>
+                    <comment>
+                        <![CDATA[Url of a WordPress blog where to get posts from.<br />
+                             Leave empty to not collect posts for a particular store]]>
+                    </comment>
                 </field>
                 <field id="cron_expression" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
                     <label>Cron expression</label>
