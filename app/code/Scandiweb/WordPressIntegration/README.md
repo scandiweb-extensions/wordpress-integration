@@ -49,6 +49,14 @@ Create a new **Text** element and select **Insert Widget**
 
 As Widget Type select WordPress Post and select a post.
 
+## How to change template used to render blog posts?
+
+To change template use example module from `app/code`.
+* Copy it to your project
+* Rename `MyVendorName` folder to match your project name or vendor
+* Replace in all files `MyVendorName` with you project name or vendor
+* Adjust template currently in `app/code/MyVendorName/WordPressIntegration/view/frontend/templates/widget/wordpress_post.phtml`
+
 ## Notes
 
 To get all legacy posts, you can use this cli command `magento wordpress:get-posts` and pass a custom url to it

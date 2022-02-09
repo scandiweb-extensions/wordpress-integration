@@ -19,7 +19,7 @@ use Magento\Framework\Stdlib\DateTime\DateTime;
 
 class WordPressPost extends Template implements BlockInterface
 {
-    protected $_template = 'widget/wordpress_post.phtml';
+    protected $_template = 'Scandiweb_WordPressIntegration::widget/wordpress_post.phtml';
     /**
      * @var PostModelFactory
      */
