@@ -66,7 +66,30 @@ or
 
 `magento cron:run --group=wordpress`
 
+## Module structure
 
+You can find the following functionality implemented in this module
+
+* `etc/widget.xml` Widget configuration. It defines widget layout and custom icon use will see in CMA elements in tha Magento admin
+
+* `view/adminhtml/web/wordpress_post.png` Custom icon for widget element in Magento admin so users can distinguish among different widgets that are added to page
+
+* `view/frontend/templates/widget/wordpress_post.phtml` Magento template file used to render widget content for frontend
+
+* `Block/Widget/WordPressPost.php` Widget block class with a few useful functions for rendering the posts content. These functions are used in `.phtml` template
+
+* `Cron/GetBlogPosts.php` Cron command implementation to get WordPres posts
+
+* `Console/Command/GetWordPressPosts.php` Magento cli command implementation that will process cli parameters adn will call a function from `GetBlogPosts` cron to get blog posts
+
+* `Model` Here you will find classes that implement WordPress posts so Magento can store them in the DB and can work with them
+
+* `Controller/Adminhtml/Block/Widget/Chooser.php` This file is responsible for first widget popup and will load info about selected WordPress post if we are editing some widget in the admin
+
+* `Block/Adminhtml/Widget/Chooser.php` This class is responsible for WordPress post selection table. It has functions to prepare and load WordPress post collection and js functions to handle user click on some post to select it.
+
+* `Block/Adminhtml/Grid/Column` Code to process image and video columns, so they look nicer in the admin grid.
+ 
 ## Future improvements
 * Add support for selectable post image size. Currently, 'large' image size will be downloaded
 * Add support for full blog post content
