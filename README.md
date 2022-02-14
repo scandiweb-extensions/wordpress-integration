@@ -19,6 +19,14 @@ composer require scandipwa/customization
 
 ```
 
+To get cron installed run
+
+```
+magento cache:clean
+magento cron:run
+magento cron:run
+```
+
 ## Configuration and usage
 
 **Integration Settings**
@@ -40,6 +48,14 @@ Create a new **Row** and add **Columns** to it if necessary using Page builder t
 Create a new **Text** element and select **Insert Widget**
 
 As Widget Type select WordPress Post and select a post.
+
+## How to change template used to render blog posts?
+
+To change template use example module from `app/code`.
+* Copy it to your project
+* Rename `MyVendorName` folder to match your project name or vendor
+* Replace in all files `MyVendorName` with you project name or vendor
+* Adjust template currently in `app/code/MyVendorName/WordPressIntegration/view/frontend/templates/widget/wordpress_post.phtml`
 
 ## Notes
 
@@ -89,7 +105,8 @@ You can find the following functionality implemented in this module
 * `Block/Adminhtml/Widget/Chooser.php` This class is responsible for WordPress post selection table. It has functions to prepare and load WordPress post collection and js functions to handle user click on some post to select it.
 
 * `Block/Adminhtml/Grid/Column` Code to process image and video columns, so they look nicer in the admin grid.
- 
+
 ## Future improvements
+* Add last cron error and execution time to be visible in WordPress settings section
 * Add support for selectable post image size. Currently, 'large' image size will be downloaded
 * Add support for full blog post content
